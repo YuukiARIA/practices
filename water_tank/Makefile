@@ -5,8 +5,8 @@ checker: check.out
 
 solution: Main.class
 
-check.out: main.c
-	gcc -Wall -O2 main.c -o check.out
+check.out: check.c
+	gcc -Wall -O2 check.c -o check.out
 
 Main.class: Main.java
 	javac Main.java
