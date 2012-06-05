@@ -25,5 +25,8 @@ check_all: checker solution
 	@java -cp . Main < E4-in.txt > E4-out.txt
 	@./check.out E4-out.txt E4-ans.txt
 
+dist: check.c Main.java Makefile
+	tar -cvzf ../water_tank_checker.tar.gz *
+
 clean:
 	rm -f *.out *.class *-out.txt
